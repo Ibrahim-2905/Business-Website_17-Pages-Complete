@@ -113,7 +113,7 @@ export default function Navbar() {
           bgColor="bg-darkOrange"
           textColor="text-white"
           hoverBgColor="bg-transparent"
-          hoverTextColor="text-darkOrange"
+          hoverTextColor="text-white"
           border="hover:border-darkOrange border-2 border-darkOrange"
           padding="px-6 py-2"
           rounded="rounded-md"

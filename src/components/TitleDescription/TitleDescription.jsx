@@ -8,7 +8,7 @@ export default function TitleDescription({
   subtitleColor = "text-primary",
   titleColor = "text-charcoalGray",
   highlightColor = "text-darkOrange",
-  descriptionColor = "text-charcoalGray/70"
+  descriptionColor = "text-charcoalGray"
 }) {
   return (
     <div className="text-center max-w-3xl mx-auto mb-12 px-4">
@@ -20,13 +20,7 @@ export default function TitleDescription({
       
       {title && (
         <h2 style={{fontWeight:"600"}} className={`text-3xl  ${titleColor} mb-3 leading-tight`}>
-          {title.split(' ').map((word, index) => (
-            word === titleHighlight ? (
-              <span key={index} className={highlightColor}>{word} </span>
-            ) : (
-              <span key={index}>{word} </span>
-            )
-          ))}
+         {title}
         </h2>
       )}
       

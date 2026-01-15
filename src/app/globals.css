@@ -79,6 +79,23 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+   --color-darkNavyBlue: #041435;
+  --color-lightNavyBlue: #1B4F89;
+
+  --color-darkNavyBlue: #041435;
+  --color-lightNavyBlue: #1B4F89;
+
+  --bg-navy-gradient: linear-gradient(
+    180deg,
+    var(--color-darkNavyBlue) 0%,
+    var(--color-lightNavyBlue) 100%
+  );
+ --bg-navy-flipped-gradient: linear-gradient(
+  180deg,
+  var(--color-lightNavyBlue) 0%,
+  var(--color-darkNavyBlue) 100%
+);
+
 }
 
 .dark {
@@ -137,5 +154,13 @@
   --color-peal:#006F6A;
   --color-darkNavyBlue:#041435;
   --color-lightNavyBlue:#1B4F89;
+  --color-white:#FFFFFF;
+
+}
+
+@layer utilities {
+  .font-open-sans {
+  font-family: var(--font-open-sans), sans-serif;
+}
 
 }

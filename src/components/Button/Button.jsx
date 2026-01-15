@@ -37,6 +37,7 @@ export default function AnimatedButton({
         fontWeight:"500",
         "--hover-bg": hoverBgColor.replace("bg-", ""),
         "--hover-text": hoverTextColor.replace("text-", ""),
+         fontFamily: 'Poppins, sans-serif',
       }}
     >
       {/* Bottom border */}

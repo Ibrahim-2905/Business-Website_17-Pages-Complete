@@ -1,7 +1,7 @@
 import React from 'react'
 import HomePage from '../../components/HomePage/HomePage'
 
-const page = () => {
+const Home = () => {
   return (
     <div>
      <HomePage />
@@ -9,4 +9,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Home

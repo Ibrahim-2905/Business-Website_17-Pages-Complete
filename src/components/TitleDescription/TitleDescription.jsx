@@ -4,14 +4,12 @@ export default function TitleDescription({
   subtitle, 
   title, 
   description, 
-  titleHighlight,
   subtitleColor = "text-primary",
   titleColor = "text-charcoalGray",
-  highlightColor = "text-darkOrange",
   descriptionColor = "text-charcoalGray"
 }) {
   return (
-    <div className="text-center max-w-3xl mx-auto mb-12 px-4">
+    <div className="max-w-3xl mx-auto  px-4">
       {subtitle && (
         <p style={{fontWeight:"500"}} className={`${subtitleColor} text-1xl  mb-3`}>
           {subtitle}
@@ -25,7 +23,7 @@ export default function TitleDescription({
       )}
       
       {description && (
-        <p className={`${descriptionColor} text-sm  `}>
+        <p className={`${descriptionColor} text-sm`}>
           {description}
         </p>
       )}

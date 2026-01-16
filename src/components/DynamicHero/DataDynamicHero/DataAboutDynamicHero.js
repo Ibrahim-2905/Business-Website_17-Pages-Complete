@@ -1,0 +1,17 @@
+export const DataAboutDynamicHero = {
+    
+  image: "/logo/aboutHero.png",
+  height: "h-[280px] sm:h-[350px] md:h-[450px] lg:h-[430px]",
+  titleProps: {
+    
+    title: "About Us",
+    titleColor:"text-white"
+   
+  }, 
+  horizontalLine: true,
+  descriptionProps: {
+    description: "We are a team of dedicated professionals committed to driving business growth through innovative solutions",
+     descriptionColor:"text-white"
+  }
+}
+

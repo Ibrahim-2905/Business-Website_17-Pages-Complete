@@ -22,8 +22,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={poppins.className}>
       <body className={`${openSans.variable} antialiased`}>
+        
         {children}
+        
       </body>
+      
     </html>
   );
 }

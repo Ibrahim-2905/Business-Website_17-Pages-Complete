@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import ExpertiseSection from '../ExpertiseSection/ExpertiseSection'
 import { DataExpertiseSectionCard } from '../ExpertiseSection/DataExpertiseSection/DataExpertiseSectionCard'
-import Footer from '../Footer/Footer'
 import Stats from '../Stats/Stats'
 import WhyChooseUs from '../WhyChooseUs/WhyChooseUs'
 import SolutionSection from '../SolutionSection/SolutionSection'
@@ -11,6 +10,7 @@ import { DataSolutionSection } from '../SolutionSection/DataSolutionSection/Data
 import TransformBusinessBanner from '../TransformBusinessBanner/TransformBusinessBanner'
 import TestimonialsSection from '../Testimonials/Testimonials'
 import { DataTestimonials } from '../Testimonials/DataTestimonials'
+import Footer from '../Footer/Footer'
 
 const HomePage = () => {
   return (

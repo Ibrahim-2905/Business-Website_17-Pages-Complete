@@ -14,8 +14,10 @@ import {
 } from "../Shadcn/NavigationMenu/ShadcnNavigationMenu"
 import AnimatedButton from "../Button/Button"
 import { ChevronRight } from "lucide-react"
+import { useRouter } from "next/navigation"
 
 export default function Navbar() {
+  const router = useRouter()
   return (
     <div className="fixed  top-0 left-0 right-0 z-50 flex justify-between items-center bg-white py-4 px-20 border-b border-gray-200">
       {/* Logo Section */}
@@ -35,7 +37,7 @@ export default function Navbar() {
 
             {/* SOLUTIONS DROPDOWN */}
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-charcoalGray hover:text-darkOrange data-[state=open]:text-darkOrange">
+              <NavigationMenuTrigger onClick={() => router.push("/solutions")} className="text-charcoalGray hover:text-darkOrange data-[state=open]:text-darkOrange">
                 Solutions
               </NavigationMenuTrigger>
 

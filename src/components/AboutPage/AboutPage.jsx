@@ -16,8 +16,16 @@ import Navbar from "../Navbar/Navbar";
 const AboutPage = () => {
   return (
     <div>
+
+       <div>
+        <DynamicHero data={DataAboutDynamicHero} />
+        </div>
       <div>
         <Navbar />
+      </div>
+
+      <div>
+
       </div>
        
         <div>

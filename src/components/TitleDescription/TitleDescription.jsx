@@ -17,7 +17,7 @@ export default function TitleDescription({
       )}
       
       {title && (
-        <h2 style={{fontWeight:"600"}} className={`text-3xl  ${titleColor} mb-3 leading-tight`}>
+        <h2 style={{fontWeight:"600"}} className={`text-3xl  ${titleColor} mb-3 leading-none`}>
          {title}
         </h2>
       )}

@@ -4,7 +4,8 @@ import HomePage from '../../components/HomePage/HomePage'
 const Home = () => {
   return (
     <div>
-     <HomePage />
+     {/* <HomePage /> */}
+     {/* <h1>HOme</h1> */}
     </div>
   )
 }

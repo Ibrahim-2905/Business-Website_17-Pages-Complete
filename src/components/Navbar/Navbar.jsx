@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import React from "react"
-import Link from "next/link"
-import Image from "next/image"
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 import {
   NavigationMenu,
@@ -11,19 +11,27 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "../Shadcn/NavigationMenu/ShadcnNavigationMenu"
-import AnimatedButton from "../Button/Button"
-import { ChevronRight } from "lucide-react"
-import { useRouter } from "next/navigation"
+} from "../Shadcn/NavigationMenu/ShadcnNavigationMenu";
+import AnimatedButton from "../Button/Button";
+import { ChevronRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
-  const router = useRouter()
+  const router = useRouter();
+
+  const goToHome = () => {
+    router.push("/");
+  };
+
   return (
-    <div className="fixed  top-0 left-0 right-0 z-50 flex justify-between items-center bg-white py-4 px-20 border-b border-gray-200">
+    <div className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center bg-white py-4 px-20 border-b border-gray-200">
       {/* Logo Section */}
-      <div className="relative">
+      <div className="relative cursor-pointer" onClick={goToHome}>
         <img src="/logo/logo.svg" alt="LOGO" height={50} width={100} />
-        <p style={{fontWeight:"500"}} className="text-[10px] absolute top-8 -right-20 text-charcoalGray whitespace-nowrap">
+        <p
+          style={{ fontWeight: "500" }}
+          className="text-[10px] absolute top-8 -right-20 text-charcoalGray whitespace-nowrap"
+        >
           Your Vision Our Execution
         </p>
       </div>
@@ -37,7 +45,10 @@ export default function Navbar() {
 
             {/* SOLUTIONS DROPDOWN */}
             <NavigationMenuItem>
-              <NavigationMenuTrigger onClick={() => router.push("/solutions")} className="text-charcoalGray hover:text-darkOrange data-[state=open]:text-darkOrange">
+              <NavigationMenuTrigger
+                onClick={() => router.push("/solutions")}
+                className="text-charcoalGray hover:text-darkOrange data-[state=open]:text-darkOrange"
+              >
                 Solutions
               </NavigationMenuTrigger>
 
@@ -46,7 +57,9 @@ export default function Navbar() {
                   {/* LEFT SIDEBAR */}
                   <div className="bg-lightGray p-8 py-14 flex flex-col justify-between">
                     <div>
-                      <h3 className="text-lg font-semibold text-charcoalGray mb-2">Solutions</h3>
+                      <h3 className="text-lg font-semibold text-charcoalGray mb-2">
+                        Solutions
+                      </h3>
                       <Image
                         src="/solutions.jpg"
                         alt="Solutions"
@@ -122,7 +135,7 @@ export default function Navbar() {
         />
       </div>
     </div>
-  )
+  );
 }
 
 /* Simple Navigation Link */
@@ -138,14 +151,17 @@ function SimpleNavLink({ href, children }) {
         </Link>
       </NavigationMenuLink>
     </NavigationMenuItem>
-  )
+  );
 }
 
 /* Mega Menu Column */
 function MegaColumn({ title, items }) {
   return (
     <div className="w-full">
-      <h4 style={{fontWeight:"500"}} className="mb-6 text-md  tracking-wide text-blue-900 uppercase">
+      <h4
+        style={{ fontWeight: "500" }}
+        className="mb-6 text-md  tracking-wide text-blue-900 uppercase"
+      >
         {title}
       </h4>
       <ul className="space-y-3">
@@ -154,7 +170,7 @@ function MegaColumn({ title, items }) {
         ))}
       </ul>
     </div>
-  )
+  );
 }
 
 /* Mega Menu Item */
@@ -166,11 +182,13 @@ function MegaItem({ title }) {
           href="/"
           className="text-sm text-charcoalGray hover:text-peal transition-colors duration-200 flex items-center gap-2 group"
         >
-          <span className="text-peal text-[2px]"><ChevronRight size={20} /></span>
-          
+          <span className="text-peal text-[2px]">
+            <ChevronRight size={20} />
+          </span>
+
           {title}
         </Link>
       </NavigationMenuLink>
     </li>
-  )
+  );
 }

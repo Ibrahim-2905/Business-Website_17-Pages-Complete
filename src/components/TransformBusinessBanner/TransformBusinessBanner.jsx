@@ -50,7 +50,7 @@ const TransformBusinessBanner = () => {
                   bgColor="bg-white"
                   textColor="text-[#1a2d4d]"
                   hoverBgColor="bg-transparent"
-                  hoverTextColor="text-white"
+                  hoverTextColor="text-darkNavyBlue"
                   border="border-2 border-white"
                   padding="px-6 sm:px-8"
                   rounded="rounded-md"

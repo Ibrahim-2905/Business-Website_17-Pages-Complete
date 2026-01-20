@@ -1,4 +1,68 @@
 
+// "use client";
+// import { ArrowRight } from "lucide-react";
+// import React from "react";
+
+// export default function AnimatedButton({
+//   text = "",
+//   bgColor = "",
+//   textColor = "",
+//   height = "h-11",
+//   padding = "",
+//   onlyBottomBorder = false,
+//   onClick,
+//   className = "",
+//   rounded = "",
+//   border,
+//   hoverBgColor = "",
+//   hoverTextColor = "",
+//   disabled = false,
+// }) {
+//   return (
+//     <button
+    
+//       onClick={onClick}
+//       disabled={disabled}
+//       className={`
+//     relative overflow-hidden inline-block group
+//     ${bgColor} ${textColor} ${height} ${padding} ${rounded} ${border} 
+//     ${disabled ? '' : `hover:${hoverBgColor} hover:${hoverTextColor}`}
+//     font-semibold text-sm 
+//     ${disabled ? 'cursor-not-allowed' : 'cursor-pointer'} flex items-center justify-center
+//     transition-colors duration-500
+//     ${disabled ? 'opacity-50' : ''}
+//     ${className}
+//   `}
+//       style={{
+//         fontWeight:"500",
+//         "--hover-bg": hoverBgColor.replace("bg-", ""),
+//         "--hover-text": hoverTextColor.replace("text-", ""),
+//          fontFamily: 'Poppins, sans-serif',
+//       }}
+//     >
+//       {/* Bottom border */}
+//       {onlyBottomBorder && (
+//         <span className="absolute bottom-0 left-0 w-full  bg-current"></span>
+//       )}
+
+
+
+
+//       <span className={`relative z-10 transition-transform duration-300 ease-in-out transform ${disabled ? '' : 'group-hover:-translate-y-full group-hover:opacity-0'}`}>
+//         {text}
+//          {/* <ArrowRight className="ml-2 block" /> */}
+//       </span>
+
+
+//       <span className={`absolute inset-0 z-0 flex items-center justify-center transition-transform duration-300 ease-in-out transform ${disabled ? '' : 'translate-y-full group-hover:translate-y-0'}`}>
+//         {text}
+       
+//       </span>
+//     </button>
+//   );
+// }
+
+
 "use client";
 import { ArrowRight } from "lucide-react";
 import React from "react";
@@ -19,48 +83,76 @@ export default function AnimatedButton({
   disabled = false,
 }) {
   return (
-    <button
-    
-      onClick={onClick}
-      disabled={disabled}
-      className={`
+   <button
+  onClick={onClick}
+  disabled={disabled}
+  className={`
     relative overflow-hidden inline-block group
-    ${bgColor} ${textColor} ${height} ${padding} ${rounded} ${border} 
-    ${disabled ? '' : `hover:${hoverBgColor} hover:${hoverTextColor}`}
-    font-semibold text-sm 
-    ${disabled ? 'cursor-not-allowed' : 'cursor-pointer'} flex items-center justify-center
+    ${bgColor} ${textColor} ${height} ${padding} ${rounded} ${border}
+    font-semibold text-sm
+    flex items-center justify-center
     transition-colors duration-500
-    ${disabled ? 'opacity-50' : ''}
+    ${disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'}
     ${className}
   `}
-      style={{
-        fontWeight:"500",
-        "--hover-bg": hoverBgColor.replace("bg-", ""),
-        "--hover-text": hoverTextColor.replace("text-", ""),
-         fontFamily: 'Poppins, sans-serif',
-      }}
-    >
-      {/* Bottom border */}
-      {onlyBottomBorder && (
-        <span className="absolute bottom-0 left-0 w-full  bg-current"></span>
-      )}
+>
+  {/* Default Text */}
+  <span className={`relative z-10 transition-transform duration-300 ease-in-out transform ${disabled ? '' : 'group-hover:-translate-y-full group-hover:opacity-0'}`}>
+    {text}
+  </span>
 
+  {/* Hover Layer */}
+  <span className={`
+    absolute inset-0 z-0 flex items-center justify-center transition-transform duration-300 ease-in-out transform
+    ${disabled ? '' : 'translate-y-full group-hover:translate-y-0'}
+    ${hoverBgColor} ${hoverTextColor}
+  `}>
+    {text}
+  </span>
+</button>
 
-
-
-      <span className={`relative z-10 transition-transform duration-300 ease-in-out transform ${disabled ? '' : 'group-hover:-translate-y-full group-hover:opacity-0'}`}>
-        {text}
-         {/* <ArrowRight className="ml-2 block" /> */}
-      </span>
-
-
-      <span className={`absolute inset-0 z-0 flex items-center justify-center transition-transform duration-300 ease-in-out transform ${disabled ? '' : 'translate-y-full group-hover:translate-y-0'}`}>
-        {text}
-       
-      </span>
-    </button>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

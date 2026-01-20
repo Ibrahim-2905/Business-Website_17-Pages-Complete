@@ -9,7 +9,7 @@ export default function TitleDescription({
   descriptionColor = "text-charcoalGray"
 }) {
   return (
-    <div className="max-w-3xl mx-auto">
+    <div className="flex flex-col">
       {subtitle && (
         <p style={{fontWeight:"500"}} className={`${subtitleColor} text-1xl  mb-3`}>
           {subtitle}

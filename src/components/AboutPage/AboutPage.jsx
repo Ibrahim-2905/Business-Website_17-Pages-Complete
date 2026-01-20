@@ -11,6 +11,8 @@ import ProgressGridSection from "../ProgressGridSection/ProgressGridSection";
 import { DataProgressSection } from "../ProgressGridSection/DataProgressSection/DataProgressSection";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
+import WhyChooseUs2 from "../WhyChooseUs/WhyChooseUs2";
+import TransformBusinessBanner2 from "../TransformBusinessBanner/TransformBusinessBanner2";
 
 // ✅ Make sure this is a proper React component
 const AboutPage = () => {
@@ -47,6 +49,11 @@ const AboutPage = () => {
         <div>
           <ProgressGridSection gridImages={DataProgressSection} />
         </div>
+
+        <div>
+          <WhyChooseUs2 />
+        </div>
+        <TransformBusinessBanner2 />
         <div>
           <Footer />
         </div>

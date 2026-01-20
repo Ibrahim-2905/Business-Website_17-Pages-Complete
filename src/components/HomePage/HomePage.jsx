@@ -11,11 +11,20 @@ import TransformBusinessBanner from '../TransformBusinessBanner/TransformBusines
 import TestimonialsSection from '../Testimonials/Testimonials'
 import { DataTestimonials } from '../Testimonials/DataTestimonials'
 import Footer from '../Footer/Footer'
+import MirageHero from '../MirageHero/MirageHero'
+import TechStack from '../TechStack/TechStack'
+import InnovationSection from '../InnovationSection/InnovationSection'
 
 const HomePage = () => {
   return (
     <div>
     <Navbar />
+
+
+    <div>
+    <MirageHero />
+    </div>
+
     <ExpertiseSection data={DataExpertiseSectionCard} />
 
     <div>
@@ -38,8 +47,16 @@ const HomePage = () => {
       <TransformBusinessBanner />
     </div>
 
-    <div className='px-4 py-5'>
+    <div>
+      <TechStack />
+    </div>
+
+    <div className='px-4 '>
       <TestimonialsSection data={DataTestimonials}  />
+    </div>
+
+    <div>
+      <InnovationSection />
     </div>
 
     <Footer />

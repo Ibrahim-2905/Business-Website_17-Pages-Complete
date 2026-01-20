@@ -7,7 +7,8 @@ const SolutionSection = ({ data = [] }) => {
     <section className="py-12 sm:py-12 lg:py-8">
       
       {/* Title Section */}
-      <div className="w-full bg-white px-4 sm:px-8 lg:px-16">
+      <div className="w-full text-center bg-white px-4 sm:px-8 lg:px-16">
+
         <TitleDescription
           titleColor="text-darkNavyBlue"
           title={

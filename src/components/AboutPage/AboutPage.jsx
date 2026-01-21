@@ -3,8 +3,6 @@ import { DataAboutDynamicHero } from "../DynamicHero/DataDynamicHero/DataAboutDy
 import WhoAreWeSection from "../WhoAreWeSection/WhoAreWeSection";
 import { DataWhoAreWeSection } from "../WhoAreWeSection/DataWhoAreWeSection/DataWhoAreWeSection";
 import { OurValuesSection } from "../OurValuesSection/OurValuesSection";
-import ExploreSolutionSection from "../SolutionSection/ExploreSolutionSection";
-import { DataSolutionSection } from "../SolutionSection/DataSolutionSection/DataSolutionSection";
 import { TeamSection } from "../TeamSection/TeamSection";
 import { DataTeamCard } from "../TeamSection/DataTeamCard/DataTeamCard";
 import ProgressGridSection from "../ProgressGridSection/ProgressGridSection";
@@ -13,6 +11,8 @@ import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import WhyChooseUs2 from "../WhyChooseUs/WhyChooseUs2";
 import TransformBusinessBanner2 from "../TransformBusinessBanner/TransformBusinessBanner2";
+import ExploreSolutionSection from "../SolutionSection/ExploreSolutionSection";
+import { DataSolutionSectionPoints } from "../SolutionSection/DataSolutionSection/DataSolutionSectionPoints";
 
 // ✅ Make sure this is a proper React component
 const AboutPage = () => {
@@ -39,7 +39,7 @@ const AboutPage = () => {
         </div>
 
         <div className="py-10">
-          <ExploreSolutionSection data={DataSolutionSection} />
+          <ExploreSolutionSection data={DataSolutionSectionPoints} />
         </div>
 
         <div>

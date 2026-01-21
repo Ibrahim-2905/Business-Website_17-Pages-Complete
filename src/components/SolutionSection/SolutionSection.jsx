@@ -2,7 +2,7 @@ import React from 'react'
 import TitleDescription from '../TitleDescription/TitleDescription'
 import Card from '../Card/Card'
 
-const SolutionSection = ({ data = [] }) => {
+export default function SolutionSection({ data = [] }){
   return (
     <section className="py-12 sm:py-12 lg:py-8">
       
@@ -48,4 +48,4 @@ const SolutionSection = ({ data = [] }) => {
   )
 }
 
-export default SolutionSection
+

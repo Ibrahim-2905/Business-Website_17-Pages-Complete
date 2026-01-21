@@ -28,7 +28,7 @@ export const DataSolutionSection = [
         description: "Optimize your financial performance and ensure regulatory compliance",
         horizontalLine:true,
         buttonProps:{
-            text:"Learn More",
+            text:"Learn More",  
             bgColor:"bg-darkOrange",
             textColor:"text-white",
             hoverBgColor:"bg-white",

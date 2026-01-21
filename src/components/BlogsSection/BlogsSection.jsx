@@ -3,8 +3,8 @@ import { DataBlogsSection } from './DataBlogsSection/DataBlogsSection';
 import BlogsCard from './BlogsCard';
 import TitleDescription from '../TitleDescription/TitleDescription';
 
-export default function BlogsSection() {
-    const cardCount = DataBlogsSection.length;
+export default function BlogsSection({data = []}) {
+    const cardCount = data.length;
 
     // Determine layout class based on card count
     const getContainerClass = () => {
@@ -29,7 +29,7 @@ export default function BlogsSection() {
 
             {/* Cards Grid/Flex Container */}
             <div className={getContainerClass()}>
-                {DataBlogsSection.map((card) => (
+                {data.map((card) => (
                     <BlogsCard
                         key={card.id}
                         image={card.image}
@@ -38,6 +38,7 @@ export default function BlogsSection() {
                         description={card.description}
                         buttonText={card.buttonText}
                         date={card.date}
+                        link={card.link}
                     />
                 ))}
             </div>

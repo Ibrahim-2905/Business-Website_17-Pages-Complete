@@ -61,7 +61,7 @@ export default function Navbar() {
                         Solutions
                       </h3>
                       <Image
-                        src="/solutions.jpg"
+                        src="/logo/case1.jpg"
                         alt="Solutions"
                         width={250}
                         height={150}

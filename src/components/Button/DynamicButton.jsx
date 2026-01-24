@@ -1,18 +1,63 @@
-"use client"
+// "use client";
+// import { useState } from "react";
+
+// export const DynamicButton = ({
+//   text = "Submit",
+//   bgColor = "",
+//   hoverBgColor = "",
+//   textColor = "",
+//   hoverTextColor = "",
+//   border = "",
+//   padding = "px-7 py-3",
+//   height = "h-[44px]",
+//   onClick,
+//   rounded,
+//   className = "",
+// }) => {
+//   const [isHovered, setIsHovered] = useState(false);
+
+//   return (
+//     <button
+//       onClick={onClick}
+//       onMouseEnter={() => setIsHovered(true)}
+//       onMouseLeave={() => setIsHovered(false)}
+//       className={`
+//         font-medium
+//         transition-all
+//         cursor-pointer
+//         duration-300
+//         ${rounded}
+//         ${height}
+//         ${padding}
+//         ${border}
+//         ${isHovered ? hoverBgColor : bgColor}
+//         ${isHovered ? hoverTextColor : textColor}
+//         ${className}
+//       `}
+//     >
+//       {text}
+//     </button>
+//   );
+// };
+
+
+
+"use client";
 import { useState } from "react";
 
-// Dynamic Button Component
 export const DynamicButton = ({
   text = "Submit",
-  bgColor = "darkNavyBlue",
-  hoverBgColor = "#1e40af",
-  textColor = "#ffffff",
-  hoverTextColor = "#ffffff",
-  border = "none",
-  padding = "0.75rem 2rem",
-  height = "44px",
+  bgColor = "",
+  hoverBgColor = "",
+  textColor = "",
+  hoverTextColor = "",
+  border = "",
+  padding = "px-7 py-3",
+  height = "h-[44px]",
   onClick,
-  className = ""
+  rounded,
+  className = "",
+  children, // Add this to accept children
 }) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -21,18 +66,21 @@ export const DynamicButton = ({
       onClick={onClick}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`font-medium transition-all duration-300 ${className}`}
-      style={{
-        backgroundColor: isHovered ? hoverBgColor : bgColor,
-        color: isHovered ? hoverTextColor : textColor,
-        padding: padding,
-        height: height,
-        cursor: 'pointer',
-        borderRadius: '4px',
-        width: '100%'
-      }}
+      className={`
+        font-medium
+        transition-all
+        cursor-pointer
+        duration-300
+        ${rounded}
+        ${height}
+        ${padding}
+        ${border}
+        ${isHovered ? hoverBgColor : bgColor}
+        ${isHovered ? hoverTextColor : textColor}
+        ${className}
+      `}
     >
-      {text}
+      {children || text} {/* Render children if provided, otherwise render text */}
     </button>
   );
 };

@@ -13,6 +13,7 @@ import WhyChooseUs2 from "../WhyChooseUs/WhyChooseUs2";
 import TransformBusinessBanner2 from "../TransformBusinessBanner/TransformBusinessBanner2";
 import ExploreSolutionSection from "../SolutionSection/ExploreSolutionSection";
 import { DataSolutionSectionPoints } from "../SolutionSection/DataSolutionSection/DataSolutionSectionPoints";
+import { DataOurValueCard } from "../OurValuesSection/DataOurValueCardSection/DataOurValueCard";
 
 // ✅ Make sure this is a proper React component
 const AboutPage = () => {
@@ -35,7 +36,7 @@ const AboutPage = () => {
         </div>
 
         <div>
-          <OurValuesSection />
+          <OurValuesSection data={DataOurValueCard} />
         </div>
 
         <div className="py-10">

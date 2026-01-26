@@ -128,7 +128,8 @@ const DynamicHero = ({ data = {} }) => {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${image})` }}
         />
-        <div className="absolute inset-0 bg-black/40" />
+       <div className="absolute z-10 inset-0 bg-darkNavyBlue opacity-70" />
+
       </div>
 
       {/* Content Wrapper */}

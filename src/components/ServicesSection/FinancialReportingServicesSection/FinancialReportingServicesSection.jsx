@@ -4,7 +4,7 @@ import TitleDescription from '../../TitleDescription/TitleDescription';
 
 const FinancialReportingServicesSection = ({ data }) => {
   return (
-    <section className="relative bg-lightGray py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 overflow-hidden">
+    <section className="relative  bg-lightGray py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 overflow-hidden">
       {/* Background Grid */}
       <div 
         className="absolute inset-0 pointer-events-none bg-cover bg-center opacity-80"

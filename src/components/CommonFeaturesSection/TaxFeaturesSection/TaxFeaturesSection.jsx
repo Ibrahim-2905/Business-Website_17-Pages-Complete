@@ -138,7 +138,7 @@ const TaxFeaturesSection = () => {
         <img
           src="/logo/pattern3.png"
           alt=""
-          className="absolute top-0 left-0 w-2/3 sm:w-1/2 md:w-1/3 opacity-40"
+          className="absolute top-0 left-0 w-2/3  sm:w-1/2 md:w-1/3  opacity-40"
         />
         <img
           src="/logo/pattern3.png"

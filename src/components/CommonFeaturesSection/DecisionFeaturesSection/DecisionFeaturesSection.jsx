@@ -25,7 +25,7 @@ const DecisionFeaturesSection = ({ data }) => {
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold font-poppins text-darkOrange mb-4">
+          <h2 className="text-3xl sm:text-4xl font-semibold font-poppins text-darkOrange mb-4">
             {data.title}
           </h2>
           <p className="text-white text-base sm:text-lg font-open-sans max-w-3xl mx-auto leading-relaxed">

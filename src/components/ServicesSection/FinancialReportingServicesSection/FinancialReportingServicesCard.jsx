@@ -4,7 +4,7 @@
 // const FinancialReportingServicesCard = ({ logo, title, description, bgImage }) => {
 //   return (
 //     <div 
-//       className="relative rounded-lg overflow-hidden p-6 h-full"
+//       className="relative rounded-lg overflow-hidden p-3 h-full"
 //       style={{ background: "var(--bg-navy-gradient)" }}
 //     >
      
@@ -23,7 +23,7 @@
 //           </div>
 
 //           {/* Title */}
-//           <h3 className="text-white font-semibold font-poppins text-lg leading-tight flex-1">
+//           <h3 className="text-white font-semibold font-poppins text-2xl leading-tight flex-1">
 //             {title}
 //           </h3>
 //         </div>
@@ -64,7 +64,7 @@ const FinancialReportingServicesCard = ({ logo, title, description, buttonProps 
 
   return (
     <div 
-      className="relative rounded-lg overflow-hidden p-3  h-full flex flex-col"
+      className="flex justify-center items-center rounded-lg overflow-hidden p-3  h-full flex flex-col"
       style={{ background: "var(--bg-navy-gradient)" }}
     >
       {/* Content */}
@@ -81,7 +81,7 @@ const FinancialReportingServicesCard = ({ logo, title, description, buttonProps 
           </div>
 
           {/* Title */}
-          <h3 className="text-white font-semibold font-poppins text-lg leading-tight flex-1">
+          <h3 className="text-white font-semibold font-poppins text-2xl leading-tight flex-1">
             {title}
           </h3>
         </div>
@@ -89,7 +89,7 @@ const FinancialReportingServicesCard = ({ logo, title, description, buttonProps 
         {/* Check Icon and Description */}
         <div className="flex items-start gap-2 mb-2 flex-1">
           <Check className="w-5 h-5 text-darkOrange flex-shrink-0 mt-0.5" />
-          <p className="text-white/90 text-md font-open-sans leading-relaxed">
+          <p className="text-white/90  text-md font-open-sans leading-relaxed">
             {description}
           </p>
         </div>

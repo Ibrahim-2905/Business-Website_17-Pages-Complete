@@ -9,7 +9,7 @@ import Navbar from "../Navbar/Navbar";
 import { DataProcessTimeline } from "../ProcessSection/ProcessTimeLine/DataProcessTimeline";
 import { ProcessTimeline } from "../ProcessSection/ProcessTimeLine/ProcessTimeline";
 import { DataTaxConsultancyServicesSection } from "../ServicesSection/DataServicesScetion/DataTaxConsultancyServicesSection/DataTaxConsultancyServicesSection";
-import FinancialReportingServicesSection from "../ServicesSection/FinancialReportingServicesSection/FinancialReportingServicesSection";
+import TaxAndPayrollServicesSection from "../ServicesSection/TaxAndPayrollServicesSection/TaxAndPayrollServicesSection";
 import TransformBusinessBanner from "../TransformBusinessBanner/TransformBusinessBanner";
 import { DataWhyChooseUsFinancialReporting } from "../WhyChooseUs/DataWhyChooseUs/DataWhyChooseUsFinancialReporting";
 import WhyChooseUs2 from "../WhyChooseUs/WhyChooseUs2";
@@ -26,7 +26,7 @@ export default function TaxConsultancyPage(){
                       </div>
           
                       <div>
-                          <FinancialReportingServicesSection data={DataTaxConsultancyServicesSection}/>
+                          <TaxAndPayrollServicesSection data={DataTaxConsultancyServicesSection}/>
                       </div>
 
                       <div>

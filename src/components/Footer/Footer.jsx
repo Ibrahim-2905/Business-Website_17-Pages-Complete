@@ -18,8 +18,12 @@ export default function Footer() {
                     </linearGradient>
                   </defs>
                   {/* Mountain/Triangle Shape */}
-                  <path d="M25 5 L45 20 L45 35 L25 45 L5 35 L5 20 Z" fill="url(#logoGradient)" />
-                  <path d="M25 15 L35 22 L35 32 L25 38 L15 32 L15 22 Z" fill="#1a2942" opacity="0.6" />
+                  {/* <path d="M25 5 L45 20 L45 35 L25 45 L5 35 L5 20 Z" fill="url(#logoGradient)" />
+                  <path d="M25 15 L35 22 L35 32 L25 38 L15 32 L15 22 Z" fill="#1a2942" opacity="0.6" /> */}
+                  <div className='w-full'>
+
+                  <img  className='w-20 h-20' src="/logo/logo.svg" alt="" />
+                  </div>
                 </svg>
               </div>
               <div className="flex flex-col leading-tight">

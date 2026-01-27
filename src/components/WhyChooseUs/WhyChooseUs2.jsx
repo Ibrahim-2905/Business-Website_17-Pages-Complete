@@ -24,7 +24,7 @@
 //           alt=""
 //           className="absolute top-0 left-0 w-[60%] sm:w-[40%] md:w-[30%] max-w-xs md:max-w-sm lg:max-w-md opacity-40"
 //         />
-        
+
 //         {/* Bottom Right Pattern */}
 //         <img
 //           src="/logo/pattern3.png"
@@ -136,79 +136,77 @@ export default function WhyChooseUs2({ data }) {
   return (
     <section
       style={componentData.bgImage ? { background: "var(--bg-navy-gradient)" } : {}}
-      className={`relative py-16 sm:py-20 px-6 sm:px-10 lg:px-20 overflow-hidden ${
-        componentData.bgImage ? '' : 'bg-white'
-      }`}
+      className={`relative py-16 sm:py-20 px-6 sm:px-10 lg:px-20 overflow-hidden ${componentData.bgImage ? '' : 'bg-white'
+        }`}
     >
       {/* Background Pattern Images - Only show if bgImage is true */}
       {componentData.bgImage && (
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          {/* Top Left Pattern */}
-          <img
-            src="/logo/pattern3.png"
-            alt=""
-            className="absolute top-0 left-0   w-[60%] sm:w-[40%] md:w-[30%] max-w-xs md:max-w-sm lg:max-w-md opacity-40"
-          />
-          
-          {/* Bottom Right Pattern */}
-          <img
-            src="/logo/pattern3.png"
-            alt=""
-            className="absolute bottom-0 right-0 w-[60%] sm:w-[40%] md:w-[30%] max-w-xs md:max-w-sm lg:max-w-md opacity-40"
-          />
-        </div>
-      )}
 
-      {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto">
-        <div className={`grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center ${
-          componentData.reverse ? 'lg:flex-row-reverse' : ''
-        }`}>
-          {/* Left Side - Content */}
-          <div className={`space-y-6 ${componentData.reverse ? 'lg:order-2' : ''}`}>
-            <TitleDescription
-              {...componentData.titleProps}
-            />
-            {componentData.descriptionProps &&(
-               <TitleDescription
-              {...componentData.descriptionProps}
-            />
-            )
+      <img
+        src="/logo/pattern3.png"
+        alt=""
+        className="absolute top-0  left-0  md:w-[40%] opacity-40"
+        style={{ clipPath: "inset(0 0 50% 0)" }} // top, right, bottom, left
+      />
 
-            }
-           
+      <img
+        src="/logo/pattern3.png"
+        alt=""
+        className="absolute bottom-0 right-0  md:w-[40%] opacity-40"
+        style={{ clipPath: "inset(50% 0 0 0)" }} // top, right, bottom, left
+      />
+    </div>
+  )
+}
 
-            {/* Feature List */}
-            <ul className="space-y-4">
-              {componentData.features.map((feature, index) => (
-                <li key={index} className="flex items-center gap-3">
-                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-darkOrange flex items-center justify-center">
-                    <Check className="w-4 h-4 text-white" strokeWidth={3} />
-                  </div>
-                  <span className={`text-base md:text-lg ${
-                    componentData.bgImage ? 'text-white' : 'text-gray-800'
-                  }`}>
-                    {feature}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
+{/* Content */ }
+<div className="relative z-10 max-w-7xl mx-auto">
+  <div className={`grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center ${componentData.reverse ? 'lg:flex-row-reverse' : ''
+    }`}>
+    {/* Left Side - Content */}
+    <div className={`space-y-6 ${componentData.reverse ? 'lg:order-2' : ''}`}>
+      <TitleDescription
+        {...componentData.titleProps}
+      />
+      {componentData.descriptionProps && (
+        <TitleDescription
+          {...componentData.descriptionProps}
+        />
+      )
 
-          {/* Right Side - Image */}
-          <div className={`flex justify-center ${
-            componentData.reverse ? 'lg:justify-start lg:order-1' : 'lg:justify-end'
-          } mt-8 lg:mt-0`}>
-            <div className="relative  w-full max-w-sm sm:max-w-md lg:max-w-lg">
-              <img
-                src={componentData.image}
-                alt={componentData.imageAlt}
-                className="w-full rounded-md h-auto"
-              />
+      }
+
+
+      {/* Feature List */}
+      <ul className="space-y-4">
+        {componentData.features.map((feature, index) => (
+          <li key={index} className="flex items-center gap-3">
+            <div className="flex-shrink-0 w-6 h-6 rounded-full bg-darkOrange flex items-center justify-center">
+              <Check className="w-4 h-4 text-white" strokeWidth={3} />
             </div>
-          </div>
-        </div>
+            <span className={`text-base md:text-lg ${componentData.bgImage ? 'text-white' : 'text-gray-800'
+              }`}>
+              {feature}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    {/* Right Side - Image */}
+    <div className={`flex justify-center ${componentData.reverse ? 'lg:justify-start lg:order-1' : 'lg:justify-end'
+      } mt-8 lg:mt-0`}>
+      <div className="relative  w-full max-w-sm sm:max-w-md lg:max-w-lg">
+        <img
+          src={componentData.image}
+          alt={componentData.imageAlt}
+          className="w-full rounded-md h-auto"
+        />
       </div>
-    </section>
+    </div>
+  </div>
+</div>
+    </section >
   );
 }

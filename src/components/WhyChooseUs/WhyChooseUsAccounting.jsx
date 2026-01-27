@@ -16,20 +16,23 @@ export default function WhyChooseUsAccounting() {
       style={{ background: "var(--bg-navy-gradient)" }}
       className="relative py-16 sm:py-20 px-6 sm:px-10 lg:px-20 overflow-hidden"
     >
-      {/* Background Pattern */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <img
-          src="/logo/pattern3.png"
-          alt=""
-          className="absolute top-0 left-0 w-[60%] sm:w-[40%] md:w-[30%] opacity-40"
-        />
-        <img
-          src="/logo/pattern3.png"
-          alt=""
-          className="absolute bottom-0 right-0 w-[60%] sm:w-[40%] md:w-[30%] opacity-40"
-        />
-      </div>
+       {/* Background Pattern */}
+            <div className="absolute inset-0 pointer-events-none overflow-hidden">
+               
+                <img
+                    src="/logo/pattern3.png"
+                    alt=""
+                    className="absolute top-0  left-0  md:w-[40%] opacity-40"
+                    style={{ clipPath: "inset(0 0 50% 0)" }} // top, right, bottom, left
+                />
 
+                <img
+                    src="/logo/pattern3.png"
+                    alt=""
+                    className="absolute bottom-0 right-0  md:w-[40%] opacity-40"
+                    style={{ clipPath: "inset(50% 0 0 0)" }} // top, right, bottom, left
+                />
+            </div>
       {/* Content */}
       <div className="relative z-10 max-w-8xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">

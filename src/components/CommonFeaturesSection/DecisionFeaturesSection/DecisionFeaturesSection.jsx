@@ -13,11 +13,13 @@ const DecisionFeaturesSection = ({ data }) => {
           src="/logo/pattern3.png"
           alt=""
           className="absolute top-0 left-0 w-[60%] sm:w-[40%] md:w-[30%] opacity-40"
+           style={{ clipPath: "inset(0 0 50% 0)" }} // top, right, bottom, left
         />
         <img
           src="/logo/pattern3.png"
           alt=""
           className="absolute bottom-0 right-0 w-[60%] sm:w-[40%] md:w-[30%] opacity-40"
+           style={{ clipPath: "inset(50% 0 0 0)" }} // top, right, bottom, left
         />
       </div>
 

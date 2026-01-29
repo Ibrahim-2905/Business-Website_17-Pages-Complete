@@ -26,9 +26,7 @@ import WhyChooseUs2 from "../WhyChooseUs/WhyChooseUs2";
 export default function PayrollProcessingPage(){
     return(
          <div>
-                   <div>
-                       <Navbar />
-                   </div>
+                   
                    <div>
                        <DynamicHero data={DataPayrollProcessingDynamicHero} />
                    </div>
@@ -58,13 +56,6 @@ export default function PayrollProcessingPage(){
                        <ProcessTimeline data={DataPayrollProcessingTimeline} />
                    </div>
        
-                
-       
-                  
-       
-                   <div>
-                       <Footer />
-                   </div>
                </div>
     )
 }

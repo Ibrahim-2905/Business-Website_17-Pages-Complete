@@ -10,9 +10,7 @@ import TransformBusinessBanner2 from "../TransformBusinessBanner/TransformBusine
 export default function BlogsPage() {
     return (
         <div>
-            <div>
-                <Navbar />
-            </div>
+           
 
             <div>
                 <DynamicHero data={DataBlogsDynamicHero} />
@@ -33,9 +31,7 @@ export default function BlogsPage() {
                 <TransformBusinessBanner2 />
             </div>
 
-            <div>
-                <Footer />
-            </div>
+           
 
 
         </div>

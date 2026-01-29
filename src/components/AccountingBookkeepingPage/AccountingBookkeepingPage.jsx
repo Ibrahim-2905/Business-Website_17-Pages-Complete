@@ -19,9 +19,7 @@ import { CEOsayings } from "../Testimonials/CEOsayings";
 export default function AccountingBookkeepingPage() {
     return (
         <div>
-            <div>
-                <Navbar />
-            </div>
+           
             <div>
                 <DynamicHero data={DataAccountingBookkeepingDynamicHero} />
             </div>
@@ -59,9 +57,7 @@ export default function AccountingBookkeepingPage() {
                 <CEOsayings />
             </div>
 
-            <div>
-                <Footer />
-            </div>
+           
         </div>
     )
 }

@@ -11,9 +11,7 @@ import TransformBusinessBanner2 from "../TransformBusinessBanner/TransformBusine
 export default function InsightsPage(){
     return(
         <div>
-            <div>
-                <Navbar />
-            </div>
+           
             <div>
                  <DynamicHero data={DataInsightDynamicHero} />
                  
@@ -33,9 +31,7 @@ export default function InsightsPage(){
             <div>
                 <TransformBusinessBanner2 />
             </div>
-            <div>
-                <Footer />
-            </div>
+           
         </div>
     )
 }

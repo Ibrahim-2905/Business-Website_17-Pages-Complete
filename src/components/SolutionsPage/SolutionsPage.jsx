@@ -13,9 +13,7 @@ const SolutionsPage = () => {
   return (
     <div>
 
-      <div>
-        <Navbar />
-      </div>
+     
       <div>
         <DynamicHero data={DataSolutionsDynamicHero} />
       </div>
@@ -42,9 +40,7 @@ const SolutionsPage = () => {
         <ExploreSolutionSection2  />
       </div>
 
-      <div>
-        <Footer />
-      </div>
+     
     </div>
   )
 }

@@ -11,9 +11,7 @@ import TransformBusinessBanner2 from "../TransformBusinessBanner/TransformBusine
 export default function ContactPage() {
     return (
         <div>
-            <div>
-                <Navbar />
-            </div>
+            
             <div>
                 <DynamicHero data={DataContactDynamicHero} />
             </div>
@@ -38,10 +36,7 @@ export default function ContactPage() {
                 <TransformBusinessBanner2 />
             </div>
 
-            <div>
-                <Footer />
-            </div>
-
+           
 
         </div>
     )

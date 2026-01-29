@@ -22,6 +22,7 @@ export const DataSapSolutionsDynamicHero = {
         textColor: "text-white",
         border: "border-b-[3px] border-transparent hover:border-darkOrange",
 
+        link:"/contact",
         rounded: "rounded-md"
     },
 
@@ -32,6 +33,7 @@ export const DataSapSolutionsDynamicHero = {
         hoverTextColor: "text-darkNavyBlue",
         textColor: "text-white",
         border: "border-b-[3px] border-gray-600 hover:border-darkNavyBlue",
+        link:"/contact",
         rounded: "rounded-md"
     },
 }

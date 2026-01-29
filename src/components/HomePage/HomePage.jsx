@@ -19,9 +19,7 @@ import TransformBusinessBanner from "../TransformBusinessBanner/TransformBusines
 const HomePage = () => {
   return (
     <div>
-      <Navbar />
-
-
+     
       <div>
         <MirageHero />
       </div>
@@ -61,7 +59,7 @@ const HomePage = () => {
         <InnovationSection />
       </div>
 
-      <Footer />
+    
 
     </div>
   )

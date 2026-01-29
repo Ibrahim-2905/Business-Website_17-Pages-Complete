@@ -18,9 +18,7 @@ export default function TaxConsultancyPage(){
     return(
         <div>
           <div>
-                      <div>
-                          <Navbar />
-                      </div>
+                      
                       <div>
                           <DynamicHero data={DataTaxConsultancyDynamicHero} />
                       </div>
@@ -52,9 +50,7 @@ export default function TaxConsultancyPage(){
                           <ProcessTimeline data={DataProcessTimeline} />
                       </div>
     
-                      <div>
-                          <Footer />
-                      </div>
+                     
                   </div>
         </div>
     )

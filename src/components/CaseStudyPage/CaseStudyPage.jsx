@@ -8,9 +8,7 @@ import CaseStudyArticle from '../CaseStudyArticle/CaseStudyArticle'
 export default function CaseStudyPage(){
     return (
         <div>
-            <div>
-                <Navbar />
-            </div>
+           
                <div>
                 <DynamicHero data={DataCaseStudyDynamicHero} />
             </div>
@@ -24,9 +22,7 @@ export default function CaseStudyPage(){
                 <TransformBusinessBanner2 />
             </div>
 
-            <div>
-                <Footer />
-            </div>
+           
         </div>
     )
 }

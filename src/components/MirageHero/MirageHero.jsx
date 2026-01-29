@@ -1,5 +1,6 @@
 import AnimatedButton from "../Button/Button";
 import TitleDescription from "../TitleDescription/TitleDescription";
+import { DynamicButton } from "../Button/DynamicButton";
 
 export default function MirageHero() {
   return (
@@ -36,21 +37,33 @@ export default function MirageHero() {
           </p>
 
           <div className="flex gap-4">
-            <AnimatedButton
+            {/* <AnimatedButton
               text="Get Started"
               bgColor="bg-darkOrange"
               textColor="text-white"
               padding="px-7"
               border="border-none hover:border hover:border-darkOrange"
               rounded="rounded-md"
+            /> */}
+            <DynamicButton
+              text="Get Started"
+              bgColor="bg-darkOrange"
+              hoverBgColor="bg-transparent"
+              hoverTextColor="text-darkOrange"
+              textColor="text-white"
+              border="border-2 border-transparent hover:border-darkOrange"
+              link="/contact"
+              rounded="rounded-md"
             />
 
-            <AnimatedButton
+            <DynamicButton
               text="Get Started"
               bgColor="bg-darkNavyBlue"
               textColor="text-white"
               padding="px-10"
               border="border-b-2 border-white"
+              hoverBgColor="bg-white"
+              hoverTextColor="text-darkNavyBlue"
               rounded="rounded-md"
             />
           </div>
@@ -69,3 +82,33 @@ export default function MirageHero() {
     </section>
   );
 }
+
+
+
+
+
+
+
+
+//  button1: {
+// text: "Get a Consultation",
+// bgColor: "bg-darkOrange",
+// hoverBgColor: "bg-white",
+// hoverTextColor: "text-darkOrange",
+// textColor: "text-white",
+// border: "border-b-[3px] border-transparent hover:border-darkOrange",
+
+// link:"/contact",
+// rounded: "rounded-md"
+//     },
+
+//     button2: {
+//         text: "Request Demo",
+//         bgColor: "bg-darkNavyBlue",
+//         hoverBgColor: "bg-white",
+//         hoverTextColor: "text-darkNavyBlue",
+//         textColor: "text-white",
+//         border: "border-b-[3px] border-gray-600 hover:border-darkNavyBlue",
+//         rounded: "rounded-md",
+//         link:"/contact",
+//     },

@@ -14,9 +14,7 @@ import WhyChooseUsSapSolutions2 from "../WhyChooseUs/WhyChooseUsSapSolutions2";
 export default function SapSolutionsPage() {
     return (
         <div>
-            <div>
-                <Navbar />
-            </div>
+           
             <div>
                 <DynamicHero data={DataSapSolutionsDynamicHero} />
             </div >
@@ -41,9 +39,7 @@ export default function SapSolutionsPage() {
                 <ProcessTimeline data={DataSapSolutionsTimeline} />
             </div>
 
-            <div>
-                <Footer />
-            </div>
+           
         </div>
     )
 }

@@ -23,9 +23,7 @@ const AboutPage = () => {
        <div>
         <DynamicHero data={DataAboutDynamicHero} />
         </div>
-      <div>
-        <Navbar />
-      </div>
+     
 
       <div>
 
@@ -55,9 +53,7 @@ const AboutPage = () => {
           <WhyChooseUs2 />
         </div>
         <TransformBusinessBanner2 />
-        <div>
-          <Footer />
-        </div>
+       
        
     </div>
   );

@@ -1,16 +1,16 @@
-export const DataDataManagementDynamicHero = {
-      image: "/logo/dataManagementHero.jpg",
+export const DataVirtualAssistanceDynamicHero ={
+      image: "/logo/odooErpHero.jpg",
     height: "h-[280px] sm:h-[340px] md:h-[440px] lg:h-[420px]",
      align: "items-center text-center max-w-ful",
     titleProps: {
 
-        title: "Data Managementt",
+        title: "Virtual AssistanceP",
         titleColor: "text-white"
 
     },
     horizontalLine: true,
     descriptionProps: {
-        description: "Secure, accurate, and efficient data handling services.",
+        description: "Professional remote support to scale your productivity.",
         descriptionColor: "text-white"
     },
 

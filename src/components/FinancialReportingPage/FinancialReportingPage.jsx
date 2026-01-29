@@ -18,9 +18,7 @@ import WhyChooseUs2 from "../WhyChooseUs/WhyChooseUs2";
 export default function FinancialReportingPage(){
     return(
         <div>
-            <div>
-                <Navbar />
-            </div>
+           
             <div>
                 <DynamicHero data={DataFinancialReportingDynamicHero} />
             </div>
@@ -51,13 +49,6 @@ export default function FinancialReportingPage(){
                 <ProcessTimeline data={DataProcessTimeline} />
             </div>
 
-         
-
-           
-
-            <div>
-                <Footer />
-            </div>
         </div>
     )
 }

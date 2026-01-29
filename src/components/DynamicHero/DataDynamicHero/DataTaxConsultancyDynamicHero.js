@@ -23,6 +23,7 @@ export const DataTaxConsultancyDynamicHero = {
         textColor: "text-white",
         border: "border-b-[3px] border-transparent hover:border-darkOrange",
 
+        link:"/contact",
         rounded: "rounded-md"
     },
 
@@ -33,6 +34,7 @@ export const DataTaxConsultancyDynamicHero = {
         hoverTextColor: "text-darkNavyBlue",
         textColor: "text-white",
         border: "border-b-[3px] border-gray-600 hover:border-darkNavyBlue",
-        rounded: "rounded-md"
+        rounded: "rounded-md",
+        link:"/contact",
     },
 }

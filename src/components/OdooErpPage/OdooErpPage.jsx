@@ -14,10 +14,7 @@ import TransformBusinessBanner from "../TransformBusinessBanner/TransformBusines
 export default function OdooErpPage() {
     return (
         <div>
-            <div>
-                <Navbar />
-            </div>
-
+           
             <div>
                 <DynamicHero data={DataOdooErpDynamicHero} />
             </div>
@@ -45,10 +42,6 @@ export default function OdooErpPage() {
                 <ProcessTimeline data={DataSapSolutionsTimeline} />
             </div>
            
-
-            <div>
-                <Footer />
-            </div>
         </div>
     )
 }

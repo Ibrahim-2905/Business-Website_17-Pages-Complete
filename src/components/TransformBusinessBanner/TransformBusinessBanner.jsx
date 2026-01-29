@@ -1,7 +1,10 @@
+"use client"
+import { useRouter } from "next/navigation";
 import AnimatedButton from "../Button/Button";
 import TitleDescription from "../TitleDescription/TitleDescription";
 
 const TransformBusinessBanner = ({title = ""}) => {
+  const router = useRouter()
   return (
     <section className="w-full bg-white py-10 sm:py-14 lg:py-10">
       <div className="max-w-[1438px] mx-auto px-4 sm:px-8 lg:px-16">
@@ -35,6 +38,7 @@ const TransformBusinessBanner = ({title = ""}) => {
            <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 mt-6 sm:mt-8">
 
                 <AnimatedButton
+                onClick={()=> router.push("/insight")}
                   text="Get Started"
                   bgColor="bg-[#F58508]"
                   textColor="text-white"
@@ -46,6 +50,7 @@ const TransformBusinessBanner = ({title = ""}) => {
                 />
 
                 <AnimatedButton
+                onClick={()=> router.push("/about")}
                   text="Learn more about us"
                   bgColor="bg-white"
                   textColor="text-[#1a2d4d]"

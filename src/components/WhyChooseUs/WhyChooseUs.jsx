@@ -86,7 +86,7 @@ const WhyChooseUs = ({
               }}
             >
               <img 
-                src={image || '/logo/WhyChooseUs.png'}
+                src={image || '/logo/whyChooseUs.png'}
                 alt="Why choose us"
                 className="w-full h-full object-cover"
                 style={{

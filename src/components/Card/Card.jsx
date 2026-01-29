@@ -1,6 +1,8 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import AnimatedButton from '../Button/Button'
+import { useRouter } from 'next/navigation'
 
 export default function Card({ 
   gradientFrom, 
@@ -11,7 +13,9 @@ export default function Card({
   points,
   buttonProps,
   horizontalLine,
+  link,
 }) {
+  const router = useRouter()
   return (
     <div 
       className="rounded-lg py-4 flex flex-col items-center px-4  justify-between gap-1 text-center shadow-lg transition-shadow duration-300 w-full max-w-[360px] min-h-[459px]"
@@ -64,7 +68,7 @@ export default function Card({
       ) : null}
 
       {/* Button */}
-      <AnimatedButton {...buttonProps} />
+      <AnimatedButton onClick={()=> router.push(link)} {...buttonProps} />
     </div>
   )
 }

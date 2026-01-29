@@ -1,8 +1,11 @@
+"use client"
 import React from 'react';
 import TitleDescription from '../TitleDescription/TitleDescription';
 import AnimatedButton from '../Button/Button';
+import { useRouter } from 'next/navigation';
 
 export default function TechStack() {
+  const router = useRouter()
   const cards = [
     { id: 1, image: '/logo/tech4.png', alt: 'Cloud' },
     { id: 2, image: '/logo/tech2.png', alt: 'AI & Machine Learning' },
@@ -43,6 +46,7 @@ export default function TechStack() {
         {/* CTA Button */}
         <div className="flex justify-center">
           <AnimatedButton
+          onClick={()=> router.push("/about")}
             text="Learn More About Our Work"
             textColor="text-white"
             padding="px-7 py-3"

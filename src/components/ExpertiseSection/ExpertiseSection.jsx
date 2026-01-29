@@ -60,6 +60,7 @@ export default function ExpertiseSection({ data }) {
                                 buttonLink={item.buttonLink}
                                 horizontalLine={item.horizontalLine}
                                 buttonProps={item.buttonProps}
+                                link={item.link}
                             />
                         </div>
                     ))}

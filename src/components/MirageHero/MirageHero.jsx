@@ -1,8 +1,11 @@
+"use client"
 import AnimatedButton from "../Button/Button";
 import TitleDescription from "../TitleDescription/TitleDescription";
 import { DynamicButton } from "../Button/DynamicButton";
+import { useRouter } from "next/navigation";
 
 export default function MirageHero() {
+  const router = useRouter()
   return (
     <section className="relative bg-lightGray min-h-[110vh] mb-15 overflow-hidden">
 
@@ -37,28 +40,29 @@ export default function MirageHero() {
           </p>
 
           <div className="flex gap-4">
-           
+
             <DynamicButton
               text="Get Started"
               bgColor="bg-darkOrange"
+              onClick={() => router.push("/blogs")}
               hoverBgColor="bg-transparent"
               hoverTextColor="text-darkOrange"
               textColor="text-white"
               border="border-2 border-transparent hover:border-darkOrange"
-              link="/contact"
               rounded="rounded-md"
-              padding="px-4  md:px-10"
+              padding="px-3  md:px-10"
             />
 
             <DynamicButton
-              text="Get Started"
+              text="View Solutions"
               bgColor="bg-darkNavyBlue"
               textColor="text-white"
-              padding="px-4 md:px-10"
+              padding="px-3 md:px-10"
               border="border-b-2 border-white"
               hoverBgColor="bg-white"
               hoverTextColor="text-darkNavyBlue"
               rounded="rounded-md"
+              onClick={() => router.push("/solutions")}
             />
           </div>
         </div>

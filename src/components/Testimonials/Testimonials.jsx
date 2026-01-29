@@ -10,9 +10,9 @@ const TestimonialsSection = ({data = []}) => {
 
   return (
     <div  style={{ background: "var(--bg-navy-gradient)" }} >
-      <div className="w-full">
+      <div className="w-full py-15">
         {/* Title */}
-        <div className='py-10 text-center'>
+        <div className='pb-5 text-center'>
         <TitleDescription  title={"Testimonials"} titleColor='text-white'/>
         </div>
         

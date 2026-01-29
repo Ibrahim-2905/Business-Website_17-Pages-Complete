@@ -9,6 +9,7 @@ gradientTo: "var(--color-lightNavyBlue)",
     title: "Financial Management",
     description: "Optimize your financial performance and ensure regulatory compliance",
     horizontalLine:false,
+    link:"/financial-reporting",
     buttonProps:{
         text:"Learn More",
         bgColor:"bg-darkOrange",

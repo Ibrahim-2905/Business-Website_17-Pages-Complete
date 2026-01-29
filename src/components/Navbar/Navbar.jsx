@@ -1,204 +1,3 @@
-// "use client";
-
-// import React, { forwardRef } from "react";
-// import Link from "next/link";
-// import Image from "next/image";
-// import { useRouter } from "next/navigation";
-// import {
-//   NavigationMenu,
-//   NavigationMenuContent,
-//   NavigationMenuItem,
-//   NavigationMenuLink,
-//   NavigationMenuList,
-//   NavigationMenuTrigger,
-// } from "../Shadcn/NavigationMenu/ShadcnNavigationMenu";
-// import AnimatedButton from "../Button/Button";
-// import { ChevronRight } from "lucide-react";
-
-// const Navbar = forwardRef(function Navbar(props, ref) {
-//   const router = useRouter();
-
-//   return (
-//     <header
-//       ref={ref}
-//       className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200"
-//     >
-//       <div className="flex justify-between items-center py-4 px-20">
-//         {/* Logo */}
-//         <div className="relative cursor-pointer" onClick={() => router.push("/")}>
-//           <Image src="/logo/logo.svg" alt="LOGO" width={100} height={50} />
-//           <p className="text-[10px] absolute top-8 -right-20 text-charcoalGray whitespace-nowrap">
-//             Your Vision Our Execution
-//           </p>
-//         </div>
-
-//         {/* Navigation */}
-//         <NavigationMenu>
-//           <NavigationMenuList className="gap-8">
-//             <SimpleNavLink href="/">Home</SimpleNavLink>
-//             <SimpleNavLink href="/about">About</SimpleNavLink>
-
-//             {/* Solutions Dropdown */}
-//             <NavigationMenuItem>
-//               <NavigationMenuTrigger className="text-charcoalGray hover:text-darkOrange data-[state=open]:text-darkOrange">
-//                 Solutions
-//               </NavigationMenuTrigger>
-
-//               <NavigationMenuContent>
-//                 <div className="w-full grid grid-cols-[400px_1fr]">
-//                   {/* Left Panel */}
-//                   <div className="bg-lightGray p-8 py-14 flex flex-col justify-between">
-//                     <div>
-//                       <h3 className="text-lg font-semibold text-charcoalGray mb-2">
-//                         Solutions
-//                       </h3>
-//                       <Image
-//                         src="/logo/case1.jpg"
-//                         alt="Solutions"
-//                         width={250}
-//                         height={150}
-//                         className="rounded-md mb-4 mt-4"
-//                       />
-//                       <p className="text-sm text-charcoalGray/70 leading-relaxed">
-//                         Tailored solutions to boost business performance.
-//                       </p>
-//                     </div>
-
-//                     <Link
-//                       href="/solutions"
-//                       className="mt-6 text-sm font-semibold text-darkOrange hover:underline"
-//                     >
-//                       Learn More →
-//                     </Link>
-//                   </div>
-
-//                   {/* Right Mega Menu */}
-//                   <div className="flex p-16 gap-20">
-//                     <MegaColumn
-//                       title="FINANCIAL SOLUTIONS"
-//                       items={[
-//                         { label: "Accounting & Bookkeeping", href: "/accounting-bookkeeping" },
-//                         { label: "Financial Reporting", href: "/financial-reporting" },
-//                         { label: "Tax Consultancy", href: "/tax-consultancy" },
-//                         { label: "Payroll Processing", href: "/payroll-processing" },
-//                       ]}
-//                     />
-
-//                     <MegaColumn
-//                       title="ERP IMPLEMENTATION"
-//                       items={[
-//                         { label: "SAP Solutions", href: "/sap-solutions" },
-//                         { label: "Odoo ERP", href: "/odoo-erp" },
-//                         { label: "Custom Development", href: "/custom-development" },
-//                       ]}
-//                     />
-
-//                     <MegaColumn
-//                       title="BUSINESS PROCESS OUTSOURCING"
-//                       items={[
-//                         { label: "Data Management", href: "/data-management" },
-//                         { label: "Virtual Assistance", href: "/virtual-assistance" },
-//                         { label: "Process Optimization", href: "/process-optimization" },
-//                       ]}
-//                     />
-//                   </div>
-//                 </div>
-//               </NavigationMenuContent>
-//             </NavigationMenuItem>
-
-//             <SimpleNavLink href="/insight">Insight</SimpleNavLink>
-//             <SimpleNavLink href="/contact">Contact</SimpleNavLink>
-//           </NavigationMenuList>
-//         </NavigationMenu>
-
-//         {/* CTA */}
-//         <AnimatedButton
-//           text="Get Started"
-//           bgColor="bg-darkOrange"
-//           textColor="text-white"
-//           hoverBgColor="bg-transparent"
-//           hoverTextColor="text-white"
-//           border="hover:border-darkOrange border-2 border-darkOrange"
-//           padding="px-6 py-2"
-//           rounded="rounded-md"
-//         />
-//       </div>
-//     </header>
-//   );
-// });
-
-// export default Navbar;
-
-// /* Simple Link */
-// function SimpleNavLink({ href, children }) {
-//   return (
-//     <NavigationMenuItem>
-//       <NavigationMenuLink asChild>
-//         <Link
-//           href={href}
-//           className="text-sm font-semibold text-charcoalGray hover:text-darkOrange transition"
-//         >
-//           {children}
-//         </Link>
-//       </NavigationMenuLink>
-//     </NavigationMenuItem>
-//   );
-// }
-
-// /* Mega Menu Column */
-// function MegaColumn({ title, items }) {
-//   return (
-//     <div>
-//       <h4 className="mb-6 text-md font-medium tracking-wide text-blue-900 uppercase">
-//         {title}
-//       </h4>
-//       <ul className="space-y-3">
-//         {items.map((item) => (
-//           <MegaItem key={item.href} title={item.label} href={item.href} />
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// }
-
-// /* Mega Menu Item */
-// function MegaItem({ title, href }) {
-//   return (
-//     <li>
-//       <NavigationMenuLink asChild>
-//         <Link
-//           href={href}
-//           className="text-sm text-charcoalGray hover:text-peal flex items-center gap-2 transition"
-//         >
-//           <ChevronRight size={18} />
-//           {title}
-//         </Link>
-//       </NavigationMenuLink>
-//     </li>
-//   );
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 "use client";
 
 import React, { forwardRef, useState } from "react";
@@ -347,9 +146,8 @@ const Navbar = forwardRef(function Navbar(props, ref) {
 
       {/* Mobile Sidebar */}
       <div
-        className={`fixed top-[73px] left-0 h-[calc(100vh-73px)] w-[280px] bg-white shadow-2xl transform transition-transform duration-300 ease-in-out lg:hidden z-50 ${
-          isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
-        }`}
+        className={`fixed top-[73px] left-0 h-[calc(100vh-73px)] w-[280px] bg-white shadow-2xl transform transition-transform duration-300 ease-in-out lg:hidden z-50 ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
       >
         <nav className="flex flex-col h-full overflow-y-auto">
           <div className="flex-1 py-6 px-6 space-y-1">
@@ -369,9 +167,8 @@ const Navbar = forwardRef(function Navbar(props, ref) {
                 <span>Solutions</span>
                 <ChevronDown
                   size={18}
-                  className={`transform transition-transform ${
-                    isSolutionsOpen ? "rotate-180" : ""
-                  }`}
+                  className={`transform transition-transform ${isSolutionsOpen ? "rotate-180" : ""
+                    }`}
                 />
               </button>
 
@@ -428,7 +225,7 @@ const Navbar = forwardRef(function Navbar(props, ref) {
                     </MobileSolutionLink>
                   </div>
 
-               
+
                 </div>
               )}
             </div>
@@ -443,7 +240,11 @@ const Navbar = forwardRef(function Navbar(props, ref) {
 
           {/* Mobile CTA */}
           <div className="p-6 border-t border-gray-200">
+
+
+
             <AnimatedButton
+              onClick={() => router.push("/blogs")}
               text="Get Started"
               bgColor="bg-darkOrange"
               textColor="text-white"
@@ -453,6 +254,7 @@ const Navbar = forwardRef(function Navbar(props, ref) {
               padding="px-6 py-3"
               rounded="rounded-md"
             />
+
           </div>
         </nav>
       </div>

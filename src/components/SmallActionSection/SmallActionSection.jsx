@@ -1,5 +1,7 @@
+"use client"
 import React from 'react';
 import AnimatedButton from '../Button/Button';
+import { useRouter } from 'next/navigation';
 
 const SmallActionSection = ({
   title = "Ready to get started?",
@@ -7,6 +9,7 @@ const SmallActionSection = ({
   buttonText = "Contact Sales",
   onButtonClick
 }) => {
+  const router = useRouter()
   return (
     <section
       style={{ background: "var(--bg-navy-gradient)" }}
@@ -49,7 +52,7 @@ const SmallActionSection = ({
               text={buttonText}
               bgColor="bg-darkNavyBlue"
               textColor="text-white"
-              onClick={onButtonClick}
+              onClick={onButtonClick || (()=> router.push("/contact"))}
               padding="px-7 py-3"
               border="border-b-2 border-white"
               rounded="rounded-md"

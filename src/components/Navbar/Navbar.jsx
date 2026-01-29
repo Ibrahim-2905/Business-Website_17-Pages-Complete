@@ -83,7 +83,7 @@ export default function Navbar() {
 
                   {/* RIGHT GRID */}
                   <div className="flex p-20 justify-between gap-20 ">
-                    <MegaColumn
+                    {/* <MegaColumn
                       title="FINANCIAL SOLUTIONS"
                       items={[
                         "Accounting & Bookkeeping",
@@ -109,7 +109,35 @@ export default function Navbar() {
                         "Virtual Assistance",
                         "Process Optimization",
                       ]}
+                    /> */}
+                    <MegaColumn
+                      title="FINANCIAL SOLUTIONS"
+                      items={[
+                        { label: "Accounting & Bookkeeping", href: "/accounting-bookkeeping" },
+                        { label: "Financial Reporting", href: "/financial-reporting" },
+                        { label: "Tax Consultancy", href: "/tax-consultancy" },
+                        { label: "Payroll Processing", href: "/payroll-processing" },
+                      ]}
                     />
+
+                    <MegaColumn
+                      title="ERP IMPLEMENTATION"
+                      items={[
+                        { label: "SAP Solutions", href: "/sap-solutions" },
+                        { label: "Odoo ERP", href: "/odoo-erp" },
+                        { label: "Custom Development", href: "/custom-development" },
+                      ]}
+                    />
+
+                    <MegaColumn
+                      title="BUSINESS PROCESS OUTSOURCING"
+                      items={[
+                        { label: "Data Management", href: "/data-management" },
+                        { label: "Virtual Assistance", href: "/virtual-assistance" },
+                        { label: "Process Optimization", href: "/process-optimization" },
+                      ]}
+                    />
+
                   </div>
                 </div>
               </NavigationMenuContent>
@@ -155,18 +183,38 @@ function SimpleNavLink({ href, children }) {
 }
 
 /* Mega Menu Column */
+// function MegaColumn({ title, items }) {
+//   return (
+//     <div className="w-full">
+//       <h4
+//         style={{ fontWeight: "500" }}
+//         className="mb-6 text-md  tracking-wide text-blue-900 uppercase"
+//       >
+//         {title}
+//       </h4>
+//       <ul className="space-y-3">
+//         {items.map((item) => (
+//           <MegaItem key={item} title={item} />
+//         ))}
+//       </ul>
+//     </div>
+//   );
+// }
+
+
 function MegaColumn({ title, items }) {
   return (
     <div className="w-full">
       <h4
         style={{ fontWeight: "500" }}
-        className="mb-6 text-md  tracking-wide text-blue-900 uppercase"
+        className="mb-6 text-md tracking-wide text-blue-900 uppercase"
       >
         {title}
       </h4>
+
       <ul className="space-y-3">
         {items.map((item) => (
-          <MegaItem key={item} title={item} />
+          <MegaItem key={item.href} title={item.label} href={item.href} />
         ))}
       </ul>
     </div>
@@ -174,18 +222,39 @@ function MegaColumn({ title, items }) {
 }
 
 /* Mega Menu Item */
-function MegaItem({ title }) {
+// function MegaItem({ title }) {
+//   return (
+//     <li>
+//       <NavigationMenuLink asChild>
+//         <Link
+//           href="/"
+//           className="text-sm text-charcoalGray hover:text-peal transition-colors duration-200 flex items-center gap-2 group"
+//         >
+//           <span className="text-peal text-[2px]">
+//             <ChevronRight size={20} />
+//           </span>
+
+//           {title}
+//         </Link>
+//       </NavigationMenuLink>
+//     </li>
+//   );
+// }
+
+
+
+
+function MegaItem({ title, href }) {
   return (
     <li>
       <NavigationMenuLink asChild>
         <Link
-          href="/"
+          href={href}
           className="text-sm text-charcoalGray hover:text-peal transition-colors duration-200 flex items-center gap-2 group"
         >
-          <span className="text-peal text-[2px]">
+          <span className="text-peal">
             <ChevronRight size={20} />
           </span>
-
           {title}
         </Link>
       </NavigationMenuLink>

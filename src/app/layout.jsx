@@ -1,5 +1,7 @@
 import { Poppins, Open_Sans } from "next/font/google";
 import "./globals.css";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -22,8 +24,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={poppins.className}>
       <body className={`${openSans.variable} antialiased`}>
+
+
+      
+        <Navbar />
+    
         
         {children}
+
+        <footer>
+          <Footer />
+        </footer>
         
       </body>
       

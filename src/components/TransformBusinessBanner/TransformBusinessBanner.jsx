@@ -1,7 +1,7 @@
 import AnimatedButton from "../Button/Button";
 import TitleDescription from "../TitleDescription/TitleDescription";
 
-const TransformBusinessBanner = () => {
+const TransformBusinessBanner = ({title = ""}) => {
   return (
     <section className="w-full bg-white py-10 sm:py-14 lg:py-10">
       <div className="max-w-[1438px] mx-auto px-4 sm:px-8 lg:px-16">
@@ -27,7 +27,7 @@ const TransformBusinessBanner = () => {
               <TitleDescription
                 titleColor="text-darkOrange"
                 descriptionColor="text-white"
-                title="Ready to Transform Your Business?"
+                title={title || "Ready to Transform Your Business?"}
                 description="Let's discuss how our solutions can help you achieve your goals"
               />
 

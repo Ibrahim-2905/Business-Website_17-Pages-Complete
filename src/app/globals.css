@@ -97,6 +97,12 @@
   var(--color-darkNavyBlue) 100%
 );
 
+--bg-teal-gradient: linear-gradient(
+    90deg,
+    rgba(0, 111, 106, 0.2) 45.19%,
+    rgba(0, 213, 203, 0.2) 100%
+  );
+
 }
 
 .dark {

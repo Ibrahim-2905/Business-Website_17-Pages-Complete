@@ -5,8 +5,8 @@ import SapAndErpAndCustomServicesCard from './SapAndErpAndCustomServicesCard';
 
 const SapAndErpAndCustomServicesSection = ({ data }) => {
   return (
-    <section className="relative bg-lightGray py-12 sm:py-16 md:py-20  px-4 sm:px-6 md:px-8 lg:px-12 overflow-hidden">
-      
+    <section className="relative bg-lightGray py-12 sm:py-16 md:py-20  px-4 sm:px-6 md:px-8  overflow-hidden">
+    
       {/* Background Grid */}
       <div 
         className="absolute inset-0 pointer-events-none bg-cover bg-center opacity-80"
@@ -31,7 +31,7 @@ const SapAndErpAndCustomServicesSection = ({ data }) => {
   sm:grid-cols-2
   lg:grid-cols-2
   xl:grid-cols-4
-  gap-6 sm:gap-8 md:gap-10 lg:gap-12
+  gap-6 sm:gap-8 md:gap-5
 ">
 
   {data.services.map((service) => (
@@ -51,3 +51,18 @@ const SapAndErpAndCustomServicesSection = ({ data }) => {
 };
 
 export default SapAndErpAndCustomServicesSection;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

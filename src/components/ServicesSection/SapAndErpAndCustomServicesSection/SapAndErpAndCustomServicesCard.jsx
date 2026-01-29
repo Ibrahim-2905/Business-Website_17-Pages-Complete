@@ -9,7 +9,7 @@ const SapAndErpAndCustomServicesCard = ({ logo, title, description, buttonProps 
 
   return (
     <div 
-      className="rounded-xl overflow-hidden p-6 px-10 flex flex-col items-center text-center h-full"
+      className="rounded-md overflow-hidden p-6 px-10 flex flex-col items-center text-center h-full"
       style={{ 
         background: "var(--bg-navy-gradient)",
         backgroundBlendMode: "overlay",

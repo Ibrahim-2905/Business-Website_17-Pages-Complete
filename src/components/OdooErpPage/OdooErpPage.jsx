@@ -1,5 +1,6 @@
 import { DataOdooErpDecisionFeatures } from "../CommonFeaturesSection/DecisionFeaturesSection/DataOdooErpDecisionFeatures";
 import DecisionFeaturesSection from "../CommonFeaturesSection/DecisionFeaturesSection/DecisionFeaturesSection";
+import OdooErpFeaturesSection from "../CommonFeaturesSection/OdooErpFeaturesSection/OdooErpFeaturesSection";
 import { DataOdooErpDynamicHero } from "../DynamicHero/DataDynamicHero/DataOdooErpDynamicHero";
 import DynamicHero from "../DynamicHero/DynamicHero";
 import Footer from "../Footer/Footer";
@@ -28,14 +29,22 @@ export default function OdooErpPage() {
             <div>
                 <DecisionFeaturesSection data={DataOdooErpDecisionFeatures} />
             </div>
+             <div>
+                <OdooErpFeaturesSection />
+            </div>
 
             <div >
-                <TransformBusinessBanner />
+                <TransformBusinessBanner 
+                title={<>
+                    <span className="text-darkOrange">Ready toelevate your business with</span>
+                    <span className="text-white"> Odoo ERP?</span>
+                    </>} />
             </div>
 
             <div>
                 <ProcessTimeline data={DataSapSolutionsTimeline} />
             </div>
+           
 
             <div>
                 <Footer />

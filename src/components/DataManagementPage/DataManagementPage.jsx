@@ -26,9 +26,9 @@ export default function DataManagementPage() {
             <div>
                 <TechTools tools={DataDataManagementTechTools} />
             </div>
-             <div className="py-0">
-                            <ButtonTitleBackground data={DataDataManagementButtonTitleBackground} />
-                        </div>
+            <div className="py-0">
+                <ButtonTitleBackground data={DataDataManagementButtonTitleBackground} />
+            </div>
             <div>
                 <ProcessTimeLineType3
                     title={DataProcessTimeLineType3.title}

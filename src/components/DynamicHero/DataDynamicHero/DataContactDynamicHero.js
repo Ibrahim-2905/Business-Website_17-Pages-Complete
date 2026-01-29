@@ -2,7 +2,8 @@ export const DataContactDynamicHero = {
 
 
     image: "/logo/contactHero.jpg",
-    height: "h-[280px] sm:h-[340px] md:h-[440px] lg:h-[420px]",
+    // height: "h-[280px] sm:h-[340px] md:h-[440px] lg:h-[420px]",
+    height : "h-[70vh]  md:h-[60vh]",
     titleProps: {
 
         title: "Contact Us",

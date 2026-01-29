@@ -15,11 +15,11 @@ const ProcessTimeLineType3 = ({
       </h2>
 
       {/* Steps Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className={`grid grid-cols-1 lg:gap-20  md:grid-cols-2  ${stepsArray.length > 4 ?  "lg:grid-cols-5" : "lg:grid-cols-4"} gap-8`} >
         {stepsArray.map((step, index) => (
           <div
             key={index}
-            className="flex flex-col items-center"
+            className="flex flex-col  items-center"
           >
             {/* Circle Badge - positioned above and overlapping the card */}
             <div className="bg-teal-700 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mb-[-20px] z-10 shadow-lg">

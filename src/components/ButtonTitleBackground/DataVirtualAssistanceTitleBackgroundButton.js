@@ -1,20 +1,17 @@
-export const DataTaxConsultancyDynamicHero = {
-     image: "/logo/taxHero.jpg",
-    // height: "h-[280px] sm:h-[340px] md:h-[440px] lg:h-[420px]",
-    height : "h-[70vh]  md:h-[60vh]",
-    align: "items-center text-center max-w-ful",
+export const DataVirtualAssistanceTitleBackgroundButton = {
+    bgImage: "/logo/pattern1.png",
 
     titleProps: {
-        title: "Tax Consultancy",
-        titleColor: "text-white",
+        title: (
+            <>
+                <span className="text-darkOrange">Ready to boost your business with</span>
+                <span className="text-white">   Virtual Assistance?</span>
+            </>
+        ),
     },
+    horizontalLine: false,
 
-    horizontalLine: true,
 
-    descriptionProps: {
-        description: "Strategic tax planning and compliance for businesses of all sizes.",
-        descriptionColor: "text-lightGray",
-    },
 
     button1: {
         text: "Get a Consultation",
@@ -23,9 +20,8 @@ export const DataTaxConsultancyDynamicHero = {
         hoverTextColor: "text-darkOrange",
         textColor: "text-white",
         border: "border-b-[3px] border-transparent hover:border-darkOrange",
-
-        link:"/contact",
-        rounded: "rounded-md"
+        rounded: "rounded-md",
+        link: "/contact"
     },
 
     button2: {
@@ -36,6 +32,9 @@ export const DataTaxConsultancyDynamicHero = {
         textColor: "text-white",
         border: "border-b-[3px] border-gray-600 hover:border-darkNavyBlue",
         rounded: "rounded-md",
-        link:"/contact",
+        link: "/contact"
     },
-}
+};
+
+
+

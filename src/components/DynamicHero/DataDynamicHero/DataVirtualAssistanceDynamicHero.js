@@ -1,10 +1,11 @@
 export const DataVirtualAssistanceDynamicHero ={
       image: "/logo/odooErpHero.jpg",
-    height: "h-[280px] sm:h-[340px] md:h-[440px] lg:h-[420px]",
+    // height: "h-[280px] sm:h-[340px] md:h-[440px] lg:h-[420px]",
+    height : "h-[70vh]  md:h-[60vh]",
      align: "items-center text-center max-w-ful",
     titleProps: {
 
-        title: "Virtual AssistanceP",
+        title: "Virtual Assistance",
         titleColor: "text-white"
 
     },

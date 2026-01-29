@@ -4,7 +4,7 @@ import TitleDescription from '../TitleDescription/TitleDescription'
 
 export default function ExpertiseSection({ data }) {
     return (
-        <section className="relative bg-lightGray py-20 px-8 overflow-hidden">
+        <section className="relative bg-lightGray py-20 px-4 overflow-hidden">
             {/* Background Bubbles */}
             <div className="absolute inset-0 pointer-events-none overflow-hidden">
                 {/* Top Left Bubbles */}

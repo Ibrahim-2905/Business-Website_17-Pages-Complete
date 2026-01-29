@@ -86,7 +86,7 @@ export const ButtonTitleBackground = ({ data = {} }) => {
                     {(button1 || button2) && (
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-4">
                             {button1 && (
-                                <div className="w-full sm:w-auto min-w-[160px]">
+                                <div className="w-auto sm:w-auto">
                                     <DynamicButton
                                         onClick={() => router.push(button1.link)}
                                         {...button1} />
@@ -94,7 +94,7 @@ export const ButtonTitleBackground = ({ data = {} }) => {
                             )}
 
                             {button2 && (
-                                <div className="w-full sm:w-auto min-w-[160px]">
+                                <div className="w-auto sm:w-auto">
                                     <DynamicButton
                                         onClick={() => router.push(button2.link)}
                                         {...button2} />
@@ -107,3 +107,23 @@ export const ButtonTitleBackground = ({ data = {} }) => {
         </div>
     );
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

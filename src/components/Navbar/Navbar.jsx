@@ -235,7 +235,7 @@ const Navbar = forwardRef(function Navbar(props, ref) {
         {/* Logo */}
         <div className="relative cursor-pointer flex items-center" onClick={() => router.push("/")}>
           <Image src="/logo/logo.svg" alt="LOGO" width={80} height={40} className="md:w-[100px] md:h-[50px]" />
-          <p className="text-[8px] md:text-[10px] absolute top-6 md:top-8 -right-12 md:-right-20 text-charcoalGray whitespace-nowrap">
+          <p className="text-[8px] md:text-[10px] absolute top-7 md:top-10 -right-12 md:-right-15 text-charcoalGray whitespace-nowrap">
             Your Vision Our Execution
           </p>
         </div>

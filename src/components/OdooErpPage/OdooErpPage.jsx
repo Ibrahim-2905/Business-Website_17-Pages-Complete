@@ -33,7 +33,7 @@ export default function OdooErpPage() {
             <div >
                 <TransformBusinessBanner 
                 title={<>
-                    <span className="text-darkOrange">Ready toelevate your business with</span>
+                    <span className="text-darkOrange">Ready to elevate your business with</span>
                     <span className="text-white"> Odoo ERP?</span>
                     </>} />
             </div>

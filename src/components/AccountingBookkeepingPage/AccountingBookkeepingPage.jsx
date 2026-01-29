@@ -24,7 +24,7 @@ export default function AccountingBookkeepingPage() {
                 <DynamicHero data={DataAccountingBookkeepingDynamicHero} />
             </div>
 
-            <div className="">
+            <div>
                 <AccountingBookkeepingServicesSection data={DataAccountingBookkeepingServicesSection} />
             </div>
 
@@ -41,7 +41,7 @@ export default function AccountingBookkeepingPage() {
                 <StatisticsAccountingSection data={DataStatisticsAccounting} />
             </div>
 
-            <div className='px-8'>
+            <div>
                 <TransformBusinessBanner />
             </div>
 

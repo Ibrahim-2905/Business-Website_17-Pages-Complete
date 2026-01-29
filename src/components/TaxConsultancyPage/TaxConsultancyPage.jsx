@@ -42,7 +42,7 @@ export default function TaxConsultancyPage(){
                           <ButtonTitleBackground  data={DataFinancialButtonTitleBackground}/>
                       </div>
                     
-                      <div className='px-8'>
+                      <div>
                           <TransformBusinessBanner />
                       </div>
           

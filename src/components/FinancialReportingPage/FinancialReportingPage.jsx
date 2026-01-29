@@ -41,7 +41,7 @@ export default function FinancialReportingPage(){
                 <ButtonTitleBackground  data={DataFinancialButtonTitleBackground}/>
             </div>
           
-            <div className='px-8'>
+            <div>
                 <TransformBusinessBanner />
             </div>
 

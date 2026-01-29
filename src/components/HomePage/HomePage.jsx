@@ -51,7 +51,7 @@ const HomePage = () => {
         <TechStack />
       </div>
 
-      <div className='px-4 '>
+      <div >
         <TestimonialsSection data={DataTestimonials} />
       </div>
 

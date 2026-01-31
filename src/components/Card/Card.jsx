@@ -1,8 +1,103 @@
+// "use client"
+// import React from 'react'
+// import Image from 'next/image'
+// import AnimatedButton from '../Button/Button'
+// import { useRouter } from 'next/navigation'
+
+// export default function Card({ 
+//   gradientFrom, 
+//   gradientTo, 
+//   image, 
+//   title, 
+//   description,
+//   points,
+//   buttonProps,
+//   horizontalLine,
+//   link,
+// }) {
+//   const router = useRouter()
+//   return (
+//     <div 
+//       className="rounded-lg py-4 flex flex-col items-center px-4  justify-between gap-1 text-center shadow-lg transition-shadow duration-300 w-full max-w-[360px] min-h-[459px]"
+//       style={{
+//         background: `linear-gradient(180deg, ${gradientFrom} 0%, ${gradientTo} 100%)`
+//       }}
+//     >
+//       {/* Image */}
+//       <div className="mb px-2">
+//         <Image 
+//           src={image} 
+//           alt={title} 
+//           width={400} 
+//           height={140} 
+//           className="object-contain"
+//         />
+//       </div>
+
+//       {/* Title */}
+//       <h3 className="text-white text-2xl mt-4">
+//         {title}
+//       </h3>
+
+//       {/* Horizontal Line */}
+//       {/* {horizontalLine && (
+//         <div className="w-75 mx-auto h-[1px] bg-white mb-4"></div>
+//       )} */}
+
+//           {/* Horizontal Line */}
+// {horizontalLine && (
+//   <div className="flex justify-center w-full mb-4">
+//     <div className="w-40 h-[1px] bg-white"></div>
+//   </div>
+// )}
+
+//         {/* Dynamic Content: Points List or Description */}
+//       {points && points.length > 0 ? (
+//         <ul className="text-white text-left text-lg font-open-sans tracking-wider max-w-[280px] mx-auto mb-6 space-y-2">
+//           {points.map((point, index) => (
+//             <li key={index} className="flex items-start" style={{fontWeight: "400"}}>
+//               <span className="mr-2 flex-shrink-0">•</span>
+//               <span>{point}</span>
+//             </li>
+//           ))}
+//         </ul>
+//       ) : description ? (
+//         <p style={{fontWeight: "400"}} className="text-white text-center text-lg tracking-wider max-w-[280px] mx-auto mb-6">
+//           {description}
+//         </p>
+//       ) : null}
+
+//       {/* Button */}
+//       <AnimatedButton onClick={()=> router.push(link)} {...buttonProps} />
+//     </div>
+//   )
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 "use client"
 import React from 'react'
 import Image from 'next/image'
 import AnimatedButton from '../Button/Button'
 import { useRouter } from 'next/navigation'
+import { motion } from 'framer-motion'
 
 export default function Card({ 
   gradientFrom, 
@@ -16,23 +111,33 @@ export default function Card({
   link,
 }) {
   const router = useRouter()
+
   return (
     <div 
-      className="rounded-lg py-4 flex flex-col items-center px-4  justify-between gap-1 text-center shadow-lg transition-shadow duration-300 w-full max-w-[360px] min-h-[459px]"
+      className="rounded-lg py-4 flex flex-col items-center px-4 justify-between gap-1 text-center shadow-lg transition-shadow duration-300 w-full max-w-[360px] min-h-[459px]"
       style={{
         background: `linear-gradient(180deg, ${gradientFrom} 0%, ${gradientTo} 100%)`
       }}
     >
-      {/* Image */}
-      <div className="mb px-2">
-        <Image 
-          src={image} 
-          alt={title} 
-          width={400} 
-          height={140} 
-          className="object-contain"
-        />
-      </div>
+      {/* Image with flip animation */}
+      <motion.div
+        className="mb px-2 w-full"
+        whileHover={{ rotateY: 180 }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+        style={{ perspective: 1000 }} // needed for 3D flip
+      >
+        <motion.div
+          style={{ rotateY: 0, backfaceVisibility: 'hidden' }}
+        >
+          <Image 
+            src={image} 
+            alt={title} 
+            width={400} 
+            height={140} 
+            className="object-contain"
+          />
+        </motion.div>
+      </motion.div>
 
       {/* Title */}
       <h3 className="text-white text-2xl mt-4">
@@ -40,18 +145,13 @@ export default function Card({
       </h3>
 
       {/* Horizontal Line */}
-      {/* {horizontalLine && (
-        <div className="w-75 mx-auto h-[1px] bg-white mb-4"></div>
-      )} */}
+      {horizontalLine && (
+        <div className="flex justify-center w-full mb-4">
+          <div className="w-40 h-[1px] bg-white"></div>
+        </div>
+      )}
 
-          {/* Horizontal Line */}
-{horizontalLine && (
-  <div className="flex justify-center w-full mb-4">
-    <div className="w-40 h-[1px] bg-white"></div>
-  </div>
-)}
-
-        {/* Dynamic Content: Points List or Description */}
+      {/* Dynamic Content: Points List or Description */}
       {points && points.length > 0 ? (
         <ul className="text-white text-left text-lg font-open-sans tracking-wider max-w-[280px] mx-auto mb-6 space-y-2">
           {points.map((point, index) => (
